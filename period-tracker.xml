@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+  <ModulePrefs 
+    title="Period Tracker">
+    <Require feature="setprefs" /> 
+  </ModulePrefs>
+  <UserPref 
+    name="startDates" 
+    default_value="0" 
+    datatype="hidden"/>
+  <Content type="html">
+  <![CDATA[ 
+    <script type="text/javascript">
+
+     // Get user preferences
+     var prefs = new _IG_Prefs(__MODULE_ID__);
+
+     // Increment value of "counter" user preference
+     function addPeriod() {  
+         var startDates = prefs.getString("startDates");
+         alert("The dates are " + startDates + ".");
+         var startDateArr = startDates.split(startDates);
+         startDateArr.push(getDate().getTime().toString())
+         prefs.set("startDates", startDateArr.join(",")
+     }
+ 
+     // Reset value of "counter" userpref to 0
+     function resetPeriods(){
+         prefs.set("startDatesr", "");
+         alert("Periods reset to " + prefs.getInt("startDates") + ".");
+     }
+     </script>
+
+  <input type=button value="AddPeriod" name="addPeriod" onClick="addPeriod()">
+  <input type=button value="ResetPeriods" name="resetPeriods" onClick="resetPeriods()">
+
+  ]]> 
+  </Content>
+</Module>
