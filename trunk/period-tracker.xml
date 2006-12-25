@@ -17,8 +17,8 @@
 
      // Increment value of "counter" user preference
      function addPeriod() {  
-         //var startDates = prefs.getString("startDates");
-         alert("The dates are " + startDates + ".");
+         // var startDateStr = prefs.getString("startDates")
+         alert("The dates are " + prefs.getString("startDates") + ".")
          //var startDateArr = startDates.split(startDates);
          //startDateArr.push(getDate().getTime().toString())
          //prefs.set("startDates", startDateArr.join(",")
