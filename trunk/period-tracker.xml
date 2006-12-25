@@ -17,17 +17,17 @@
 
      // Increment value of "counter" user preference
      function addPeriod() {  
-         var startDates = prefs.getString("startDates");
+         //var startDates = prefs.getString("startDates");
          alert("The dates are " + startDates + ".");
-         var startDateArr = startDates.split(startDates);
-         startDateArr.push(getDate().getTime().toString())
-         prefs.set("startDates", startDateArr.join(",")
+         //var startDateArr = startDates.split(startDates);
+         //startDateArr.push(getDate().getTime().toString())
+         //prefs.set("startDates", startDateArr.join(",")
      }
  
      // Reset value of "counter" userpref to 0
      function resetPeriods(){
-         prefs.set("startDatesr", "");
-         alert("Periods reset to " + prefs.getInt("startDates") + ".");
+         prefs.set("startDates", "");
+         alert("Periods reset to " + prefs.getString("startDates") + ".");
      }
      </script>
 
