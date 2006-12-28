@@ -16,12 +16,13 @@
      var prefs = new _IG_Prefs(__MODULE_ID__);
 
      // Increment value of "counter" user preference
-     function addPeriod() {  
-         var startDateStr = prefs.getString("startDates")
+     function addPeriod() {
+         var startDateStr = "" + prefs.getString("startDates")
          alert("The dates are " + startDateStr + ".")
-         //var startDateArr = startDates.split(startDates);
-         //startDateArr.push(getDate().getTime().toString())
-         //prefs.set("startDates", startDateArr.join(",")
+         var startDateArr = startDateStr.split(startDates)
+         Date now = new Date();
+         startDateArr.push(now.getTime().toString())
+         prefs.set("startDates", startDateArr.join(","))
      }
  
      // Reset value of "counter" userpref to 0
