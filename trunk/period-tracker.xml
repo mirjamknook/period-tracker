@@ -19,7 +19,9 @@
      function addPeriod() {  
          var startDateStr = "" + prefs.getString("startDates")
          alert("The dates are " + startDateStr + ".")
-         var startDateArr = startDateStr.split(",")
+         var startDateArr = new Array()
+         if (startDateStr == "")
+            startDateArr = startDateStr.split(",")
          startDateArr.push((new Date()).getTime().toString())
          prefs.set("startDates", startDateArr.join(","))
      }
