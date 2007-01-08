@@ -1,36 +1,34 @@
 <html>
   <head>
+    <script src="../src/day.js"></script>
+
+  <script type="text/javascript">
+function displayJsDayText()
+{
+  document.getElementById("jsday1").value=getDay();
+}
+</script>
   </head>
   <body>
-
-    <script src="../tst/day.js">
-    </script>
-
     <p>
       <hr>
       <form>
 	<table border="1">
 	  <tr>
 	    <th>
-	      Time
-	    </th>
-	    <th></th>
-	    <th>
 	      JS Day
 	    </th>
 	  </tr>
-	  <tr>
-	    <td rowspan="2">
-	      <input type="text" name="time">
-	    </td>
-	    <td> -> </td>
-	    <td rowspan="2">
-	      <input type="text" name="jsday">
+	    <td>
+	      <input id="jsday1" type="text" name="jsday">
 	    </td>
 	  </tr>
 	  <tr>
-	    <td> <- </td>
-	    		    </tr>
+	  <td>
+	     <button type="button" name="today" onclick="displayJsDayText()" >Today</button>
+	     <button type="button" name="tomorrow" onclick="displayJsDayText()" >Tomorrow</button>
+	  </td>
+	  </tr>
 	</table>
       </form>
       <hr>
