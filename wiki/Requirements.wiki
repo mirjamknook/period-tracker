@@ -9,9 +9,9 @@ The features of an ideal period tracker, and how important they are.
 || Timing || Dates, duration || 1 ||
 || Volume || How light/heavy (by day?) || 3 ||
 || Intensity || Level of pain || 3 ||
-|| Cravings || ? || 5 ||
+|| Cravings ||  || 5 ||
 || Mood swings || Pre-menstrual irritability || 3 ||
-|| Sleeplessness || Difficulty sleeping || 5||
+|| Sleeplessness ||  || 5||
 
 ----
 
