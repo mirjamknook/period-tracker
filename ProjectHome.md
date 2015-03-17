@@ -1,0 +1,1 @@
+A way to store and visualize the length of monthly cycles. Useful in identifying the current cycle phase and predicting the end of the current cycle.
